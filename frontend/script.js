@@ -61,7 +61,7 @@ const handleLogin = (event) => {
     container.style.display = 'none';
     chat.style.display = 'block';
 
-    ws = new WebSocket('ws://localhost:8080');
+    ws = new WebSocket("wss://mychat-zmfo.onrender.com");
     ws.onmessage = processMessage;
 
     const msg = {
