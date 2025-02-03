@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myCHAT</title>
+    <script src="https://kit.fontawesome.com/11913b65fc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section id="container">
+        <section class="login">
+            <h3>Entre no myCHAT</h3>
+            <form class="login-form">
+                <input type="text" class="login-input" placeholder="Digite seu nome (apenas letras)..." required />
+                <button type="submit" class="login-submit">Entrar</button>
+            </form>
+        </section>
+    </section>
+
+    <section class="chat">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="user-profile">
+                    <div class="avatar"></div>
+                    <span class="username"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-area">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <div class="avatar"></div>
+                    <span>Chat</span>
+                </div>
+            </div>
+
+            <div class="messages"></div>
+
+            <div class="chat-input-area">
+                <form class="chat-actions">
+                    <button type="button" class="emoji-button">
+                        <i class="far fa-smile"></i>
+                    </button>
+
+                    <label class="upload-button" for="image-upload">
+                        <i class="far fa-image"></i>
+                    </label>
+                    <input type="file" id="image-upload" accept="image/*" style="display: none;">
+
+                    <input type="text" class="chat-input" placeholder="Digite uma mensagem" required />
+
+                    <button type="submit" class="chat-button send-button">
+                        <i class="far fa-paper-plane"></i>
+                    </button>
+
+                    <button type="button" class="chat-button record-button">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="emoji-picker">
+        <div class="emoji-picker-content">
+            <div class="emoji-list">
+                <span class="emoji">😊</span>
+                <span class="emoji">😂</span>
+                <span class="emoji">❤️</span>
+                <span class="emoji">👍</span>
+                <span class="emoji">😎</span>
+                <span class="emoji">🎉</span>
+                <span class="emoji">🔥</span>
+                <span class="emoji">✨</span>
+                <span class="emoji">😍</span>
+                <span class="emoji">🤔</span>
+                <span class="emoji">👋</span>
+                <span class="emoji">🙌</span>
+                <span class="emoji">🤝</span>
+                <span class="emoji">👏</span>
+                <span class="emoji">💪</span>
+                <span class="emoji">🤗</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
